@@ -1,0 +1,20 @@
+{
+  "name": "pew-pew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch sass/main.scss:assets/style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-delecluse/pew-pew.git"
+  },
+  "keywords": [],
+  "author": "christopher-delecluse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris-delecluse/pew-pew/issues"
+  },
+  "homepage": "https://github.com/chris-delecluse/pew-pew#readme"
+}
