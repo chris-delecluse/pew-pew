@@ -1,11 +1,17 @@
+const animeCanvas = () => {
+    requestAnimationFrame(animeCanvas)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+    drawSpaceships()
+    drawBullet()
+}
+
 const spaceshipsMoveToLeft = (subPositionX) => {
     spaceshipsX_1 -= subPositionX
     spaceshipsX_2 -= subPositionX
     spaceshipsX_3 -= subPositionX
     spaceshipsX_4 -= subPositionX
     spaceshipsX_5 -= subPositionX
-
-    spaceshipsBulletX -= subPositionX
 
     if (spaceshipsX_1 - 25 < 0) {
         spaceshipsX_1 = 0
@@ -24,8 +30,6 @@ const spaceshipsMoveToRight = (addPositionX) => {
     spaceshipsX_3 += addPositionX
     spaceshipsX_4 += addPositionX
     spaceshipsX_5 += addPositionX
-
-    spaceshipsBulletX += addPositionX
 
     if (spaceshipsX_5 + 25 > canvas.width) {
         spaceshipsX_1 = 1051

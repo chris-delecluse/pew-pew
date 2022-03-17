@@ -1,19 +1,21 @@
-spaceships()
+drawSpaceships()
+animeCanvas()
+
 
 window.addEventListener('keydown', event => {
 
     if (event.key === 'q') {
         console.log('move left')
-        spaceships()
+        drawSpaceships()
         spaceshipsMoveToLeft(20)
 
     } else if (event.key === 'd') {
         console.log('move right')
-        spaceships()
+        drawSpaceships()
         spaceshipsMoveToRight(20)
 
     } else if (event.key === 'f') {
         console.log('fire')
-        bullet()
+
     }
 })

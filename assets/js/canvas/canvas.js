@@ -13,10 +13,7 @@ let spaceshipsBulletY = 635
 canvas.width = 1100
 canvas.height = 700
 
-const spaceships = () => {
-
-    requestAnimationFrame(spaceships)
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+const drawSpaceships = () => {
     ctx.fillStyle = '#FFF'
     ctx.strokeStyle = '#FFF'
 
@@ -41,13 +38,13 @@ const spaceships = () => {
     ctx.stroke()
 }
 
-const bullet = () => {
-    requestAnimationFrame(bullet)
+const drawBullet = () => {
     ctx.fillStyle = 'blue'
-    ctx.fillRect(spaceshipsBulletX, spaceshipsBulletY, 10, 6)
-    spaceshipsBulletY -= 10;
+    ctx.fillRect(spaceshipsBulletX, spaceshipsBulletY, 3, 6)
 
-    if (spaceshipsBulletY < 0) {
-        spaceshipsBulletY = 635
+    spaceshipsBulletY -= 10
+
+    if (spaceshipsBulletY === 20) {
+        spaceshipsBulletY += 10
     }
 }
