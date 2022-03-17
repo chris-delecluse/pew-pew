@@ -14,6 +14,7 @@ canvas.width = 1100
 canvas.height = 700
 
 const drawSpaceships = () => {
+
     ctx.fillStyle = '#FFF'
     ctx.strokeStyle = '#FFF'
 
@@ -44,7 +45,9 @@ const drawBullet = () => {
 
     spaceshipsBulletY -= 10
 
+
     if (spaceshipsBulletY === 20) {
         spaceshipsBulletY += 10
     }
 }
+

@@ -1,10 +1,4 @@
-const animeCanvas = () => {
-    requestAnimationFrame(animeCanvas)
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-    drawSpaceships()
-    drawBullet()
-}
 
 const spaceshipsMoveToLeft = (subPositionX) => {
     spaceshipsX_1 -= subPositionX

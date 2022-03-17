@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass" : "sass --watch sass/main.scss:assets/style/style.css"
+    "sass": "sass --watch sass/main.scss:assets/style/style.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/chris-delecluse/pew-pew/issues"
   },
-  "homepage": "https://github.com/chris-delecluse/pew-pew#readme"
+  "homepage": "https://github.com/chris-delecluse/pew-pew#readme",
+  "dependencies": {
+    "global": "^4.4.0",
+    "http-server": "^14.1.0",
+    "nodemon": "^2.0.15"
+  }
 }
